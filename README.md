@@ -4,5 +4,5 @@
 3. ## [Dynamic Programming](https://github.com/Rabbi-hasan0/CSES-problem-solvong/tree/main/Dynamic%20Programming)
 4. ## [Range Queries](https://github.com/Rabbi-hasan0/CSES-problem-solvong/tree/main/Range%20Queries)
 5. ## [Mathematics](https://github.com/Rabbi-hasan0/CSES-problem-solvong/tree/main/Mathematics)
-6. ## []()
-7. ## []()
+6. ## [Graph Algorithms](https://github.com/Rabbi-hasan0/CSES-problem-solvong/tree/main/Graph%20Algorithms)
+7. ## [Tree Algorithms](https://github.com/Rabbi-hasan0/CSES-problem-solvong/tree/main/Tree%20Algorithms)
