@@ -1,33 +1,33 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
+#define ll long long
 using namespace std;
- 
+
+bool cmp(pair<int, int> &a, pair<int, int> &b){
+    return a.second < b.second;
+}
+
 int32_t main() {
- 
-   int n;
-   cin >> n ;
-   vector<pair<int, int>> p;
-   for(int i = 1; i <= n; i++){
-    int x, y;
-    cin >> x >> y;
-    p. push_back({x, y});
-   }
-   sort(p.begin(), p.end(), [] (pair<int, int>x, pair<int, int>y){
-         return x.second < y.second;
-   });
- 
-   /*for(auto [i, t]: p){
-     cout << i << ' ' << t <<'\n';
-   }*/
- 
-   int cnt = 0; int endd = -1;
-   for(int i = 0; i < n; i++){
- 
-     if(p[i].first >= endd){
-       cnt ++;
-       endd = p[i].second;
-     }
-   }
-   cout << cnt <<'\n';
- 
-  return 0;
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
+    int t = 1; //cin >> t;
+    while (t--) {
+        int n; cin >> n;
+        vector<pair<int, int>> vp;
+        for(int i = 0; i < n; i++){
+            int x, y;
+            cin >> x >> y;
+            vp.push_back({x, y});
+        }
+        
+        sort(vp.begin(), vp.end(), cmp);
+        int ans = 0, time = 1;
+        for(auto [x, y]: vp){
+            if(time <= x){
+                ans++;
+                time = y;
+            } 
+        }
+        cout << ans << '\n';
+    }
+    return 0;
 }
